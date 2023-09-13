@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-COMMERCE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Mdbootstrap/css/mdb.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <span class="up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </span>
+
+    <section id="lod">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </section>
+
+    <section id="header">
+      <a href="#">
+        <img style="width: 120px" src="image/Kayan-Logo.png" alt="" />
+      </a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="lg-bag" class="cart-count">
+            <span>0</span
+            ><a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+          <a href="#" id="close"><i class="fa-solid fa-circle-xmark"></i></a>
+        </ul>
+      </div>
+      <div class="mobile">
+        <a href="#" class="cart-count"
+          ><span>0</span><i class="fa-solid fa-bag-shopping ico-x"></i
+        ></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="broadtails" class="section-p1">
+      <div class="single-pro-image">
+        <img src="image/products/f1.jpg" width="100%" id="mainImage" alt="" />
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img
+              src="image/products/f1.jpg"
+              onclick="toggleImg(this.src)"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+
+          <div class="small-img-col">
+            <img
+              src="image/products/f2.jpg"
+              onclick="toggleImg(this.src)"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+
+          <div class="small-img-col">
+            <img
+              src="image/products/f3.jpg"
+              onclick="toggleImg(this.src)"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+
+          <div class="small-img-col">
+            <img
+              src="image/products/f4.jpg"
+              onclick="toggleImg(this.src)"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="single-pro-details">
+        <h6>Home / T-Shirt</h6>
+        <h4>Men's Fashion T-Shirt</h4>
+        <h2>$139.00</h2>
+        <select>
+          <option>Select Size</option>
+          <option>XXL</option>
+          <option>XL</option>
+          <option>Lg</option>
+          <option>Sm</option>
+        </select>
+        <input type="number" name="" value="1" id="" />
+        <button class="normal">Add To Cart</button>
+        <h4>Product Details</h4>
+        <span
+          >The Gilda Ultra Cotton T-shirt IS made from a substantial 6.0 oz. per
+          sq. yd. fabric constructed from 100% cotton, this classic fit
+          preshrunk jersey knit provides unmatched comfort with each wear.
+          Featuring a taped neck and shoulder, and a seamless double-needle
+          collar, and available in a range of colors, it offers it all in the
+          ultimate head-turning package.</span
+        >
+      </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Summer Collection New Modern Design</p>
+      <div class="pro-container shop-items">
+        <div class="pro">
+          <img src="image/products/n1.jpg" alt="" />
+          <div class="des center">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+        </div>
+
+        <div class="pro">
+          <img src="image/products/n2.jpg" alt="" />
+          <div class="des center">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+        </div>
+
+        <div class="pro">
+          <img src="image/products/n3.jpg" alt="" />
+          <div class="des center">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+        </div>
+
+        <div class="pro">
+          <img src="image/products/n4.jpg" alt="" />
+          <div class="des center">
+            <span>adidas</span>
+            <h5>Cartoon Astronaut T-Shirts</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+          </div>
+          <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>
+          Get E-mail updates about our latest shop and
+          <span>special offers.</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <img
+        class="logo"
+        style="width: 120px"
+        src="image/Kayan-Logo.png"
+        alt=""
+      />
+      <div class="footer">
+        <div class="col">
+          <h4>Contact</h4>
+          <p>
+            <strong>Address :</strong> 562 Wellington Road, Street 32, San
+            Francisco
+          </p>
+          <p><strong>Phone :</strong> +201147814775</p>
+          <p><strong>Hours :</strong> 10:00 - 18:00, Mon - Sat</p>
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+              <a
+                href=""
+                target="_blank"
+              >
+                <i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-google"></i
+              ></a>
+              <a
+                href=""
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href=""
+                target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href=""
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <h4>About</h4>
+          <a href="#">About Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy PolicyY</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="row">
+            <img src="image/pay/app.jpg" />
+            <img src="image/pay/play.jpg" />
+          </div>
+          <p>Secured Payment Gateways</p>
+          <img src="image/pay/pay.png" />
+        </div>
+
+        <div class="copyright">
+          <p>
+            Copyright &copy;2023 All rights reserved | This template is made
+            with <i class="fa-solid fa-heart"></i> by
+            <a
+              href=""
+              class=""
+            >
+              <span>Mohamed hesham</span></a
+            >.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="Mdbootstrap/js/mdb.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

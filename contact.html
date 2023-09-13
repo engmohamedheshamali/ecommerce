@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-COMMERCE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Mdbootstrap/css/mdb.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript"
+        src="https://unpkg.com/@emailjs/browser@3.11.0/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("-LAo_-3Ub02sFOx9v");
+      })();
+    </script>
+
+
+  </head>
+  <body>
+
+    <span class="up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </span>
+
+    <section id="lod">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </section>
+
+    <section id="header">
+      <a href="#">
+        <img style="width: 120px " src="image/Kayan-Logo.png" alt="" />
+      </a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li> 
+          <li><a href="shop.html">Shop</a></li> 
+          <li><a href="blog.html">Blog</a></li> 
+          <li><a href="about.html">About</a></li> 
+          <li><a class="active" href="contact.html">Contact</a></li> 
+          <li id="lg-bag" class="cart-count" style="visibility: hidden;"><span>0</span><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li> 
+          <a href="#" id="close"><i class="fa-solid fa-circle-xmark"></i></a>
+        </ul>
+      </div>
+      <div class="mobile">
+        <a href="#" class="cart-count" style="visibility: hidden;"><span>0</span><i class="fa-solid fa-bag-shopping ico-x"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+      </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+      <h2>#let's _ talk</h2>
+      <p>LEAVE A MESSAGE, We love to hear from you!</p>
+    </section>
+
+    <section id="contact-details" class="section-p1">
+      <div class="details">
+        <span>GET IN TOUCH</span>
+        <h2>Visit one of our agency locations or contact us today</h2>
+        <h3>Head Office</h3>
+        <div>
+          <li>
+            <i class="fa-regular fa-map"></i>
+            <p>56 Glassford Street Glasgow G1 1UL New York</p>
+          </li>
+
+          <li>
+            <i class="fa-regular fa-envelope"></i>
+            <p>mohamedheshamali82@gmail.com</p>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-phone-flip"></i>
+            <p>+201022134532</p>
+          </li>
+
+          <li>
+            <i class="fa-regular fa-clock"></i>
+            <p>Monday to Saturday: 9.00am to 16.00pm</p>
+          </li>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7292973.777167761!2d36.17002924509108!3d26.807416901802615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2z2YXYtdix!5e0!3m2!1sar!2seg!4v1684244656358!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+
+
+    </section>
+<!-- return formValidate(); -->
+    <section id="form-details">
+      <form action="" id="form" method="post" onsubmit="formSend(); reset(); return false;">
+        <span>LEAVE A MESSAGE</span>
+        <h2>We love to hear from you</h2>
+        <input type="text" placeholder="Your Name" id="user" required>
+        <div id="error1n" class="ero"></div>
+
+        <input type="email" name="email" id="email" placeholder="E-mail" required>
+        <div id="error2e" class="ero"></div>
+
+        <input type="text" id="subject" placeholder="subject" required>
+        <div id="error3s" class="ero"></div>
+
+        <textarea name="" id="message" cols="30" rows="5" placeholder="Your Massage" required></textarea>
+        <button class="normal" id="btn" onclick="">SEND</button>
+      </form>
+      <div class="people">
+        <div class="">
+          <img src="image/pepole/1 (1).png" alt="">
+          <p><span>John Doe</span> <br> Senior Marketing Manager <br> Phone: + OOO 1147814775 <br> Email: contact@example.com</p>
+        </div>
+
+        <div class="">
+          <img src="image/pepole/2.png" alt="">
+          <p><span>William Smith</span> <br> Senior Marketing Manager <br> Phone: + OOO 1147814775 <br> Email: contact@example.com</p>
+        </div>
+
+        <div class="">
+          <img src="image/pepole/3.png" alt="">
+          <p><span>Emma Stone</span> <br> Senior Marketing Manager <br> Phone: + OOO 1147814775 <br> Email: contact@example.com</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <img class="logo" style="width: 120px;" src="image/Kayan-Logo.png" alt="">
+      <div class="footer">
+        <div class="col">
+
+          <h4>Contact</h4>
+          <p><strong>Address :</strong> 562 Wellington Road, Street 32, San Francisco</p>
+          <p><strong>Phone :</strong> +201147814775</p>
+          <p><strong>Hours :</strong> 10:00 - 18:00, Mon - Sat</p>
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+              <a href="" target="_blank" > <i class="fa-brands fa-facebook-f "></i></a>
+              <a href=""  target="_blank"><i class="fa-brands fa-google  "></i></a>
+              <a href=""  target="_blank"><i class="fa-brands fa-instagram  "></i></a>
+              <a href=""  target="_blank"><i class="fa-brands fa-whatsapp  "></i></a>
+              <a href=""  target="_blank"><i class="fa-brands fa-linkedin-in  "></i></a>
+              <a href=""  target="_blank"><i class="fa-brands fa-github  "></i></a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col">
+          <h4>About</h4>
+          <a href="#">About Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy PolicyY</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+        </div>
+  
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+  
+        <div class="col install">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="row">
+            <img src="image/pay/app.jpg">
+            <img src="image/pay/play.jpg">
+          </div>
+            <p>Secured Payment Gateways </p>
+            <img src="image/pay/pay.png">
+        </div>
+  
+        <div class="copyright">
+        <p>Copyright &copy;2023 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <a href="" class=""> <span>Mohamed hesham</span></a>.</p>  
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+    
+
+
+    
+
+// form valid
+
+
+
+  
+              function formSend(){
+             
+
+                emailjs.send("service_5kvlkvm","template_0e8gcv1",{
+                from_name: document.getElementById("user").value,
+                email_id: document.getElementById("email").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value,
+                }).then(function (res){
+                  alert("success!" + res.status);
+                })
+                
+              }
+              
+
+</script>
+
+    <script src="Mdbootstrap/js/mdb.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
